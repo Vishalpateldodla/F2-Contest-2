@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Contest 2</title>
+    <style>
+      .content-table{
+        border-style: hidden;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body style="background-color: black; color: white; padding: 50px;">
+  <div class="total">
+    <h1>New Employees</h1>
+  <form id="employeeForm" style="font-size: 28px; justify-content: space-between; display: flex;">
+    
+    <div class="row">
+    <label for="name"> Enter Name</label><br>
+    <input type="text" id="name" required style="background-color: black; color: white; width: 400px; height: 56px; margin-top: 10px;">
+    </div>
+    <div class="row">
+    <label for="profession">Enter Profession</label><br>
+    <input type="text" id="profession" required style="background-color: black; color: white; width: 400px; height: 56px; margin-top: 10px;">
+    </div>
+    <div class="row">
+    <label for="age">Enter Age</label><br>
+    <input type="number" id="age" required style="background-color: black; color: white; width: 400px; height: 56px; margin-top: 10px;">
+    </div>
+    </form><br>
+    <button type="submit" onclick="addEmployee()" style="margin-top: 10px; margin-bottom: 10px; padding: 10px 20px;">Add User</button>
+  
+  <div id="error" style="color:red; font-size: 24px; font-weight: 400;"></div>
+  <div id="success" style="color:green; font-size: 24px; font-weight: 400;"></div>
+  <h1>Added Employees</h1>
+  <table class="content-table" id="employeeTable">
+    <tbody id="employeeList"></tbody>
+  </table>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
